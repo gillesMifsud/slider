@@ -1,0 +1,62 @@
+.header__icon{ display: none;}
+
+@media only screen and (max-width: 750px) {
+
+    .site-pusher, .site-container { height: 100%; }
+    .site-container { overflow: hidden; }
+    .site-pusher {
+        transition-duration: 0.3s;
+        transform: translateX(0px);
+    }
+
+    .header{ position: static;}
+
+    .site-content{
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 0;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch; /* Inertie sur iOS */
+    }
+
+    .header__icon{
+        position: relative;
+        display: block;
+        float: left;
+        cursor: pointer;
+        width: 35px;
+        height: 66px;
+        line-height: 66px;
+        color: #FFFFFF;
+        font-size: 1.8em;
+        left: 15px;
+    }
+
+    /* Le menu collé à gauche est masqué grâce à un transform -400px*/
+    .menu{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        width: 400px;
+
+        transform: translateX(-400px);
+        background-color: #0288D1;
+    }
+
+    .menu a{
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+    .with--sidebar .site-pusher{
+        transform: translateX(400px);
+    }
+}

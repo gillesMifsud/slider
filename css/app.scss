@@ -1,0 +1,47 @@
+/*---------------------*\
+        $ GLOBAL
+\*---------------------*/
+html, body{
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  line-height: 1.4em;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;}
+
+/*---------------------*\
+        $ HEADER
+\*---------------------*/
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 66px;
+  line-height: 66px;
+  color: #FFF;
+  background-color: #607D8B;
+}
+
+.header__logo{
+  font-weight: bold;
+  padding: 0 25px;
+  float: left;
+}
+
+.header__logo i {
+  line-height: 1.4em;
+  font-size: 3em;
+}
+
+/*---------------------*\
+        $ MENU
+\*---------------------*/
+.menu{
+  float: left;
+}

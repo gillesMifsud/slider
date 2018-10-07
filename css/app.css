@@ -1,0 +1,77 @@
+/*---------------------*\
+        $ RESPONSIVE
+\*---------------------*/
+@import "_responsive.css";
+
+/*---------------------*\
+        $ GLOBAL
+\*---------------------*/
+html, body{
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    line-height: 1.4em;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.site-content{
+    padding-top: 66px;
+}
+
+/*---------------------*\
+        $ HEADER
+\*---------------------*/
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 66px;
+    line-height: 66px;
+    color: #FFF;
+    background-color: #03A9F4;
+}
+
+.header__logo{
+    font-weight: bold;
+    padding: 0 25px;
+    float: left;
+}
+
+.header__logo i {
+    line-height: 1.4em;
+    font-size: 3em;
+}
+
+/*---------------------*\
+        $ MENU
+\*---------------------*/
+.menu{
+    float: left;
+}
+
+.menu a{
+    padding: 0 10px;
+}
+
+.menu a:hover{
+    color: #607D8B;
+}
+
+/*---------------------*\
+        $ CONTAINER
+\*---------------------*/
+.container{
+    padding: 0 30px;
+}
+
